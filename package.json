@@ -13,6 +13,7 @@
     "@types/react-dom": "^18.0.6",
     "axios": "^0.27.2",
     "react": "^18.1.0",
+    "react-document-title": "^2.0.3",
     "react-dom": "^18.1.0",
     "react-query": "^3.39.1",
     "react-router-dom": "^6.3.0",
@@ -29,10 +30,17 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": ["react-app", "react-app/jest"]
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
@@ -40,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-document-title": "^2.0.5",
     "gh-pages": "^4.0.0",
     "sass": "^1.52.1"
   }

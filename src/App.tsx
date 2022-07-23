@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import DocumentTitle from "react-document-title";
 
 const App = (): JSX.Element => {
   const [count, setCount] = useState<string>("");
@@ -75,9 +76,11 @@ const App = (): JSX.Element => {
   };
 
   return (
-    <div className="app" onClick={incrementCount}>
-      <h1>{count}</h1>
-    </div>
+    <DocumentTitle title={count ?? "0"}>
+      <div className="app" onClick={incrementCount}>
+        <h1>{count}</h1>
+      </div>
+    </DocumentTitle>
   );
 };
 
